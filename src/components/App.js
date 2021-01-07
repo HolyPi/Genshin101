@@ -40,10 +40,10 @@ class App extends React.Component {
         return (
             <Router>
             <div className="App">
-             
+                <div className="background">
                 <Navbar />
                 <Header />
-       
+                </div>
                   {/* aaaaa */}
         {/* <h1>Name: {items.name}</h1>
         <h2>Description: {items.description}</h2> */}
