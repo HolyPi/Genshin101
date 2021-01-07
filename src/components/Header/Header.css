@@ -1,12 +1,10 @@
 
 .hero-section {
-    align-items:  center;
+    align-items: center;
 
 }
-/* .hero-section > .hero-sky {
-    
-    
-} */
+
+
 
 .hero-sky img {
     height: 15vh;
@@ -14,6 +12,30 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 50px 10px 10px 10px;
        
        
 }
+
+.hero-figure > img {
+    position: relative;
+    height: 120vh; 
+    display: block;
+    top: 100;
+    filter: contrast(100%);
+    padding-left: 750px;
+    
+   
+    
+}
+
+
+.hero-figure > h1 {
+    background: rgb(180,217,233);
+    background: linear-gradient(0deg, rgba(180,217,233,1) 0%, rgba(248,242,242,1) 98%);
+    font-size: 120px;
+    color: #233146;
+   
+}
+
+
