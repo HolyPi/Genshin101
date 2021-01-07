@@ -1,0 +1,25 @@
+
+.hero-section {
+    align-items:  center;
+
+}
+.hero-section > .hero-sky {
+    background-image: url("../../static/images/sky.png");
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+.hero-sky img {
+    height: 15vh;
+    margin-left: 13%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+       
+       
+}

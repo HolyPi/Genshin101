@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from './Navbar/Navbar';
+import Header from './Header/Header';
 
 class App extends React.Component {
 
@@ -14,7 +15,7 @@ class App extends React.Component {
     }
     componentDidMount() {
 
-        fetch('https://api.genshin.dev/characters/mona')
+        fetch('https://api.genshin.dev/characters/albedo')
             .then(res => res.json())
             .then(json => {
               console.log('parsed json', json)
@@ -39,10 +40,13 @@ class App extends React.Component {
         return (
             <Router>
             <div className="App">
+             
                 <Navbar />
-                  aaaaa
-        <h1>Name: {items.name}</h1>
-        <h2>Description: {items.description}</h2>
+                <Header />
+       
+                  {/* aaaaa */}
+        {/* <h1>Name: {items.name}</h1>
+        <h2>Description: {items.description}</h2> */}
                     
             </div>
             </Router>

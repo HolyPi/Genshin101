@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import si from '../../static/images/GI.png'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export default function Navbar() {
