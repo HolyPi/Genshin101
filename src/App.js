@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from './Navbar/Navbar';
-import Header from './Header/Header';
-import Body from './Body/Body';
+import Home from './pages/Home'
+import Characters from './pages/Characters'
 
 class App extends React.Component {
 
@@ -40,16 +39,17 @@ class App extends React.Component {
 
         return (
             <Router>
+                <Switch>
             <div className="App">
-            <div className="background">
-                <Navbar />
-                <Header />
-                <Body />
-                </div>
+                <Route path="/" exact render={ () => <Home/>}>
+                    </Route>
+        
+                    <Route path="/characters" exact render={ () => <Characters/>} />
                  {/* aaaaa 
             <h1>Name: {items.name}</h1>
         <h2>Description: {items.description}</h2>  */}
             </div>
+            </Switch>
             </Router>
         );
 
