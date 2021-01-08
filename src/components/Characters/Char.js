@@ -1,15 +1,18 @@
 import React from 'react'
 import './Char.css'
+import holder from '../../static/images/Diluc.webp'
 
 export default function Char() {
     return (
-        
-        <div className="char-section">
-            aaaa
-        {/* <div className="hero-figure"></div>
-        <div className="hero-img"><img src={venti} alt="Venti"></img></div>
-        <div className="hero-logo"><img src={genshi} alt="Logo"></img></div> */}
+        <div>
+        <div className="side-nav">
         </div>
-       
+        <div className="char-container">
+            <div className="char-portrait">
+                <img src={holder}></img>
+            </div>
+            <div className="circle"></div>
+        </div>  
+        </div>     
     )
 }

@@ -8,11 +8,9 @@ export default function Home() {
         <div>
             
             <div className="background">
-            
                 <Navbar />
                 <Header />
                 <Body />
-               
                 </div>
                 
         </div>

@@ -42,12 +42,10 @@ class App extends React.Component {
                 <Switch>
             <div className="App">
                 <Route path="/" exact render={ () => <Home/>}>
-                    </Route>
-        
-                    <Route path="/characters" exact render={ () => <Characters/>} />
-                 {/* aaaaa 
-            <h1>Name: {items.name}</h1>
-        <h2>Description: {items.description}</h2>  */}
+                </Route>
+                <Route path="/characters" exact render={ () => <Characters/>} />
+            {/* <h1>Name: {items.name}</h1>
+            <h2>Description: {items.description}</h2>  */}
             </div>
             </Switch>
             </Router>
