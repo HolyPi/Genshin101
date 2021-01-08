@@ -1,21 +1,16 @@
 import React from 'react'
 import './Header.css'
-import venti from '../../static/images/Venti2.png'
+import venti from '../../static/images/Venti3.png'
 import genshi from '../../static/images/Genshin.png'
 
 export default function Header() {
     return (
         
         <div className="hero-section">
-        <span>
-        <div className="hero-sky">
-        <img src={genshi} alt="icon"></img>
+        <div className="hero-figure"></div>
+        <div className="hero-img"><img src={venti} alt="Venti"></img></div>
+        <div className="hero-logo"><img src={genshi} alt="Logo"></img></div>
         </div>
-        </span>
-        <div className="hero-figure">
-        <img src={venti} alt="Venti"></img>
-        <h1>For everything Genshin Impact</h1></div>
-       </div> 
        
     )
 }

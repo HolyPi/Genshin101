@@ -1,41 +1,30 @@
-
 .hero-section {
-    align-items: center;
-
+    height: 50vh;
+    align-items:  center;
 }
 
-
-
-.hero-sky img {
+.hero-logo img {
     height: 15vh;
-    margin-left: 13%;
+    margin-left: 26%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 10px 10px 10px;
-       
-       
+    padding-top: 100px;
+    margin-right: auto;  
+ 
 }
 
-.hero-figure > img {
-    position: relative;
+.hero-img img {
+   position: absolute;
+    display: block;
+    margin-left: 70%;
+    margin-right: auto;
+    filter: contrast(100%);
     height: 120vh; 
     display: block;
-    top: 100;
-    filter: contrast(100%);
-    padding-left: 750px;
-    
+    left: 0px; 
+    top: 0px;
    
     
 }
 
-
-.hero-figure > h1 {
-    background: rgb(180,217,233);
-    background: linear-gradient(0deg, rgba(180,217,233,1) 0%, rgba(248,242,242,1) 98%);
-    font-size: 120px;
-    color: #233146;
-   
-}
 
 

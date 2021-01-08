@@ -1,0 +1,30 @@
+body {
+    background: rgb(180,217,233);
+    background: linear-gradient(0deg, rgba(180,217,233,1) 0%, rgba(248,242,242,1) 98%);
+}
+
+
+.quote-section {
+    align-items: center;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.quote-section > h1 span {
+    display: block;
+    font-size: 105px;
+    color: #233146;
+    white-space: pre-line; 
+    margin-top: 60px;
+    /* padding-left: 180px; */
+}
+
+.quote-section > h1 .ital {
+    display: block;
+    font-size: 105px;
+    color: #233146;
+    white-space: pre-line; 
+    margin-top: 40px;
+    /* padding-left: 180px; */
+    font-style: italic;
+}

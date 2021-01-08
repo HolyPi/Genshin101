@@ -10,7 +10,7 @@
 
 .background {
     background-image: url("../../static/images/Sky.png");
-    background-image: url("../../static/images/Sky.png"), linear-gradient(0deg, rgba(180,217,233,1) 0%, rgba(248,242,242,1) 98%);
+    background-image: url("../../static/images/Sky.png"), ;
     height: 60vh;
     width: 100%;
     background-position: center;

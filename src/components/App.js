@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from './Navbar/Navbar';
 import Header from './Header/Header';
+import Body from './Body/Body';
 
 class App extends React.Component {
 
@@ -43,10 +44,11 @@ class App extends React.Component {
             <div className="background">
                 <Navbar />
                 <Header />
+                <Body />
                 </div>
-                  {/* aaaaa */}
-        {/* <h1>Name: {items.name}</h1>
-        <h2>Description: {items.description}</h2> */}
+                 {/* aaaaa 
+            <h1>Name: {items.name}</h1>
+        <h2>Description: {items.description}</h2>  */}
             </div>
             </Router>
         );
