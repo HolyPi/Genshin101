@@ -17,9 +17,8 @@
     background-repeat: no-repeat; 
     background-size: cover;
     z-index: 100;
-    
-
-    
+   
+     
 }
 
 
@@ -48,12 +47,14 @@ nav {
     text-align: center;
     width: 95vw;
     justify-content: center;
+
     
    
 
 }
 
 nav > ul li a { 
+    
     color: #FBFDFD;
     font-weight: light;
     padding-bottom: 10px;

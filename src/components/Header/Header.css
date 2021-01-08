@@ -1,6 +1,7 @@
 .hero-section {
     height: 50vh;
     align-items:  center;
+    
 }
 
 .hero-logo img {
@@ -9,6 +10,7 @@
     display: block;
     padding-top: 100px;
     margin-right: auto;  
+    filter: drop-shadow(5px 5px 15px #1C7075);
  
 }
 
@@ -18,10 +20,11 @@
     margin-left: 70%;
     margin-right: auto;
     filter: contrast(100%);
-    height: 120vh; 
+    height: 115vh; 
     display: block;
     left: 0px; 
     top: 0px;
+    mask-image: linear-gradient(rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
    
     
 }
