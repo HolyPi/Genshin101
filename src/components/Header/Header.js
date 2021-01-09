@@ -10,6 +10,7 @@ export default function Header() {
         <div className="hero-figure"></div>
         <div className="hero-img"><img src={venti} alt="Venti"></img></div>
         <div className="hero-logo"><img src={genshi} alt="Logo"></img></div>
+        {/* <div className="button-char">Characters</div> */}
         </div>
        
     )

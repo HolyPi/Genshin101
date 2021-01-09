@@ -8,9 +8,9 @@ export default function Navbar2() {
     return (
         <nav>
             <ul className="nav-links">
-                <li><Link to="/characters">Characters</Link></li>
-                <li><Link to="/elements">Elements</Link></li>
-                <li><Link to="/domains">Domains</Link></li>
+                <li className="litwo"><Link to="/characters">Characters</Link></li>
+                <li className="litwo"><Link to="/elements">Elements</Link></li>
+                <li className="litwo"><Link to="/domains">Domains</Link></li>
             </ul>
         </nav>
  
