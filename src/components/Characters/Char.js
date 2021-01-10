@@ -38,10 +38,11 @@ export default function Char() {
         </div>
         <div className="char-container">
         <div className="char-portrait"> 
-                <img src={holder}></img>
-                <div className="name">Diluc</div>
-                <div className="desc">The tycoon of a winery empire in Mondstadt,
-                unmatched in every possible way.</div>
+                <img className="port" src={holder}></img>
+                <p className="chname">Diluc</p>
+                <p className="chdesc">The tycoon of a winery empire in Mondstadt,
+                unmatched in every possible way.</p>
+                <img className="rarity" src={five}></img>
                
             </div>
             <div className="circle"><img src={bg}></img></div>
