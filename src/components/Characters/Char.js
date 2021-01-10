@@ -7,42 +7,34 @@ import five from '../../static/images/5.webp'
 import four from'../../static/images/4.webp'
 const axios = require("axios")
 
-
-
 export default function Char() {
     const [allChar, setAllChar] = useState([])
-    
     const url = "https://api.genshin.dev/characters/all"
     useEffect( () => {
         async function fetchData()  {
             const data = await axios.get(url)
-            console.log(data)
-            const test = data.data.map((char)=> char.name)
-            console.log(test)
             setAllChar(data.data.map((char) => {
-                return {name: char.name, icon: `https://api.genshin.dev/characters/${char.name}/icon`}
+                console.log(char)
+                console.log(char.name.toLowerCase())
+                return {name: char.name, icon: `https://api.genshin.dev/characters/${char.name.toLowerCase()}/icon`}
             }))
         }
         fetchData();
     }, [])
     return (
         <div>
+        <div className="side-nav">
         { allChar.map((char) => {
             return (
                 <div>
                     <p>{char.name} </p>
-                        <img src={char.icon}>
-                        </img>
+                    <img src={char.icon}></img>
                     
                 </div>
             )
         })};
-        <div className="side-nav">
-            <div className="icons">
-                <p></p>
-            
-            </div>
-            <div className="names"></div>
+
+        
         </div>
         <div className="char-container">
         <div className="char-portrait">
