@@ -24,23 +24,20 @@ export default function Char() {
     return (
         <div>
         <div className="side-nav">
+        <div className="allChar">
         { allChar.map((char) => {
             return (
                 <div>
-                    <p>{char.name} </p>
-                    <img src={char.icon}></img>
+                    <ul class="char-name">{char.name} </ul>
+                    <img className="char-image" src={char.icon}></img>
                     
                 </div>
             )
-        })};
-
-        
+        })}
+        </div>
         </div>
         <div className="char-container">
-        <div className="char-portrait">
-                <div className="allChar">
-                    
-                </div>
+        <div className="char-portrait"> 
                 <img src={holder}></img>
                 <div className="name">Diluc</div>
                 <div className="desc">The tycoon of a winery empire in Mondstadt,
