@@ -60,3 +60,16 @@ nav > ul li a {
     padding-bottom: 10px;
     transition: all 400ms ease-in-out;
 }
+
+nav > a .logo {
+    width: 80px;
+    height: 40px;
+    margin-left: 0;
+    float: left;
+    padding-left: 13px;
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 8px #517DB6);
+    
+
+
+}

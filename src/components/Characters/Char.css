@@ -11,7 +11,6 @@ top: 0;
 left: 0;
 background: rgb(180,217,233);
 background: linear-gradient(180deg, rgba(180,217,233,1) 0%, rgba(65, 65, 83, 0.322) 98%);
-
 overflow-x: hidden;
 padding-top: 20px;
 box-shadow: 0 0 0 2px #172137;

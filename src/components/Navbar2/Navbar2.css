@@ -44,3 +44,14 @@ nav > ul .litwo a {
     padding-bottom: 10px;
     transition: all 400ms ease-in-out;
 }
+
+nav > a .logo2 {
+    width: 80px;
+    height: 40px;
+    margin-left: 355px;
+    padding-left: 13px;
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 8px #517DB6);
+    
+}
+
