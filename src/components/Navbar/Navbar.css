@@ -30,13 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
     position: sticky;
-
-    /* border-bottom: 10px solid #E20B17; */
-    /* Either keep it as a border, or make it a border that appears on hover
-    under items*/
-
 }
 
 
@@ -56,10 +50,19 @@ nav {
 nav > ul li a { 
     
     color: #FBFDFD;
-    font-weight: light;
     padding-bottom: 10px;
     transition: all 400ms ease-in-out;
+    font-size: 15px;
+    
 }
+
+nav > ul li a:hover {
+    filter: drop-shadow(2px 4px 8px #172137);
+    border-bottom: 1px solid white;
+
+}
+
+
 
 nav > a .logo {
     width: 80px;

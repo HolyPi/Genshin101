@@ -18,7 +18,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
     position: sticky;
     
 
@@ -40,15 +39,21 @@ nav {
 
 nav > ul .litwo a { 
     
-    color: #3d4242b4;
+    color: #3d42427c;
     padding-bottom: 10px;
     transition: all 400ms ease-in-out;
+    font-size: 15px;
+}
+
+nav > ul .litwo a:hover {
+    filter: drop-shadow(2px 4px 8px #172137);
+    border-bottom: 2px solid white;
 }
 
 nav > a .logo2 {
     width: 80px;
     height: 40px;
-    margin-left: 355px;
+    margin-left: 350px;
     padding-left: 13px;
     cursor: pointer;
     filter: drop-shadow(2px 4px 8px #172137);
@@ -62,6 +67,7 @@ nav > ul .active-page a {
     color: #353a3a;
     padding-left: 13px;
     cursor: pointer;
+    font-size: 15px;
    
     
 }
