@@ -5,6 +5,13 @@ import { useState, useEffect } from 'react'
 import bg from '../../static/images/mon.jpg'
 import five from '../../static/images/5.png'
 import four from'../../static/images/4.png'
+import anemo from '../../static/images/anemo.png'
+import cryo from '../../static/images/cryo.png'
+import geo from '../../static/images/geo.png'
+import hydro from '../../static/images/hydro.png'
+import dendro from '../../static/images/dendro.png'
+import electro from '../../static/images/electro.png'
+import pyro from '../../static/images/pyro.png'
 const axios = require("axios")
 
 export default function Char() {
@@ -19,6 +26,26 @@ export default function Char() {
             return <img className="rarity2" src={four}></img>
         } else {
           return <p>PLEASE HELP!</p>
+        }
+    }
+
+    function Elem(props) {
+        if (props.vision === "Geo") {
+            return <img className="elem" src={geo}></img>
+        } else if (props.vision === "Anemo") {
+            return <img className="elem" src={anemo}></img>
+        } else if (props.vision === "Cryo") {
+            return <img className="elem" src={cryo}></img>
+        }  else if (props.vision === "Hydro") {
+        return <img className="elem" src={hydro}></img>
+        } else if (props.vision === "Electro") {
+            return <img className="elem" src={electro}></img>
+        } else if (props.vision === "Pyro") {
+            return <img className="elem" src={pyro}></img>
+        } else if (props.vision === "Dendro") {
+            return <img className="elem" src={dendro}></img>
+        } else {
+            return <p>idk</p>
         }
     }
     function changeChar(e) {
@@ -38,7 +65,7 @@ export default function Char() {
     useEffect( () => {
         async function fetchChar()  { 
         const data2 = await axios.get(url2)
-        const {name, description, rarity, portrait} = data2.data
+        const {name, description, rarity, portrait, vision} = data2.data
         // const stars = (rarity) => {switch (rarity) {
         //     case 5:  return <img src={five}></img>;
         //     case 4: return <img src={four}></img>;
@@ -51,6 +78,7 @@ export default function Char() {
             <p className="chname">{name}</p>
             <p className="chdesc">{description}</p>
             <Rar rarity={rarity}/>
+            <Elem vision={vision}/>
             { 
         }
             </div>

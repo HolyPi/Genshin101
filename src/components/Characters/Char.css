@@ -138,6 +138,24 @@ box-shadow: 0 0 2px 0px #172137;
     
 }
 
+.elem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    margin-left: 27%;
+    margin-top: auto;
+    height: 13vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    width: 17%;
+    height: auto;
+    opacity: 0.5;
+    filter: drop-shadow(2px 4px 8px #77899d85);
+
+}
 
 .allChar {
     padding: 20px;
