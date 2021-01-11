@@ -83,9 +83,10 @@ box-shadow: 0 0 2px 0px #172137;
     margin-right: auto;
     position: absolute;
     top: 0;
-    margin-left: 60%;
+    margin-left: 61%;
     z-index: 10;
-    color: #161E32
+    color: #161E32;
+    filter: drop-shadow(2px 4px 8px #77899d85);
 
 }
 
@@ -98,10 +99,11 @@ box-shadow: 0 0 2px 0px #172137;
     margin-right: auto;
     position: absolute;
     top: 0;
-    margin-left: 63%;
+    margin-left: 64%;
     margin-top: 22%;
     z-index: 10;
-    color: #172137
+    color: #172137;
+    filter: drop-shadow(2px 4px 8px #77899d85);
 }
 .rarity {
     display: block;
@@ -118,6 +120,7 @@ box-shadow: 0 0 2px 0px #172137;
     image-rendering: pixelated;
     width: 40%;
     height: 100px;
+    filter: drop-shadow(2px 4px 8px #77899d85);
 }
 
 .rarity2 {
@@ -126,7 +129,7 @@ box-shadow: 0 0 2px 0px #172137;
     margin-right: auto;
     position: absolute;
     top: 0;
-    margin-left: 60%;
+    margin-left: 62%;
     margin-top: 35%;
     z-index: 10;
     height: 13vh;
@@ -135,6 +138,8 @@ box-shadow: 0 0 2px 0px #172137;
     image-rendering: pixelated;
     width: 30%;
     height: 100px;
+    filter: drop-shadow(2px 4px 8px #77899d85);
+    
     
 }
 
@@ -144,17 +149,16 @@ box-shadow: 0 0 2px 0px #172137;
     margin-right: auto;
     position: absolute;
     top: 0;
-    margin-left: 27%;
+    margin-left: 20%;
     margin-top: auto;
     height: 13vh;
     image-rendering: auto;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
-    width: 17%;
+    width: 32%;
     height: auto;
     opacity: 0.5;
     filter: drop-shadow(2px 4px 8px #77899d85);
-
 }
 
 .allChar {
@@ -172,9 +176,9 @@ box-shadow: 0 0 2px 0px #172137;
     letter-spacing: 1px;
     display: block;
     color: #172137;
-    padding: 1rem 0;
+    padding: 10px 0;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 800;
     filter: drop-shadow(2px 4px 8px #ebebeb);
     cursor: pointer;
     

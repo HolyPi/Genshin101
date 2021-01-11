@@ -20,6 +20,7 @@ nav {
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
+    
 
 }
 
@@ -39,8 +40,7 @@ nav {
 
 nav > ul .litwo a { 
     
-    color: #353a3a;
-    font-weight: light;
+    color: #3d4242b4;
     padding-bottom: 10px;
     transition: all 400ms ease-in-out;
 }
@@ -51,7 +51,18 @@ nav > a .logo2 {
     margin-left: 355px;
     padding-left: 13px;
     cursor: pointer;
-    filter: drop-shadow(2px 4px 8px #517DB6);
+    filter: drop-shadow(2px 4px 8px #172137);
+    
+}
+
+nav > ul .active-page a {
+    font-weight: 800;
+    width: 80px;
+    height: 40px;
+    color: #353a3a;
+    padding-left: 13px;
+    cursor: pointer;
+   
     
 }
 
