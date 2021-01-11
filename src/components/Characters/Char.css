@@ -84,7 +84,7 @@ box-shadow: 0 0 2px 0px #172137;
     margin-right: auto;
     position: absolute;
     top: 0;
-    margin-left: 62%;
+    margin-left: 60%;
     z-index: 10;
     color: #161E32
 
@@ -110,26 +110,42 @@ box-shadow: 0 0 2px 0px #172137;
     margin-right: auto;
     position: absolute;
     top: 0;
-    margin-left: 63%;
-    margin-top: 30%;
+    margin-left: 60%;
+    margin-top: 32%;
     z-index: 10;
     height: 13vh;
     image-rendering: auto;
-  image-rendering: crisp-edges;
+    image-rendering: crisp-edges;
     image-rendering: pixelated;
+    width: 40%;
+    height: 100px;
 }
 
-.rar img {
-    width: 50px;
-    height: 50px;
+.rarity2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    margin-left: 60%;
+    margin-top: 35%;
+    z-index: 10;
+    height: 13vh;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    width: 30%;
+    height: 100px;
+    
 }
+
 
 .allChar {
     padding: 20px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 15px;
     justify-items: center; 
     text-align: center;
 
@@ -143,6 +159,7 @@ box-shadow: 0 0 2px 0px #172137;
     font-size: 1rem;
     font-weight: bold;
     filter: drop-shadow(2px 4px 8px #ebebeb);
+    cursor: pointer;
     
 }
 

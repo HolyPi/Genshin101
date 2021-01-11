@@ -2,10 +2,9 @@ import React from 'react'
 import {render} from 'react-dom';
 import './Char.css'
 import { useState, useEffect } from 'react'
-import holder from '../../static/images/Diluc.webp'
 import bg from '../../static/images/mon.jpg'
-import five from '../../static/images/5.webp'
-import four from'../../static/images/4.webp'
+import five from '../../static/images/5.png'
+import four from'../../static/images/4.png'
 const axios = require("axios")
 
 export default function Char() {
@@ -14,10 +13,10 @@ export default function Char() {
     const [charName, setCharName] = useState("albedo")
     const url = "https://api.genshin.dev/characters/all"
     function Rar(props) {
-        if (props.rarity == 5) {
-            return <img src={five}></img>
-        } else if(props.rarity == 4) {
-            return <img src={four}></img>
+        if (props.rarity === 5) {
+            return <img className="rarity" src={five}></img>
+        } else if(props.rarity === 4) {
+            return <img className="rarity2" src={four}></img>
         } else {
           return <p>PLEASE HELP!</p>
         }
@@ -40,11 +39,11 @@ export default function Char() {
         async function fetchChar()  { 
         const data2 = await axios.get(url2)
         const {name, description, rarity, portrait} = data2.data
-        const stars = (rarity) => {switch (rarity) {
-            case 5:  return <img src={five}></img>;
-            case 4: return <img src={four}></img>;
-            default: return <p>pls help</p>
-              }}
+        // const stars = (rarity) => {switch (rarity) {
+        //     case 5:  return <img src={five}></img>;
+        //     case 4: return <img src={four}></img>;
+        //     default: return <p>pls help</p>
+        //       }}
         const charJSX = (<div>
             <div className="char-container">
             <div className="char-portrait"> 
@@ -54,9 +53,6 @@ export default function Char() {
             <Rar rarity={rarity}/>
             { 
         }
-   
-
-            <p className="rar">{rarity}</p>
             </div>
             <div className="circle"><img src={bg}></img></div>
             </div>
@@ -74,8 +70,7 @@ export default function Char() {
             return (
                 <div>
                     <a value={char.name} onClick={(e)=>changeChar(e)}><ul class="char-name">{char.name} </ul></a>
-                    <img className="char-image" src={char.icon}></img>
-            
+                    <img className="char-image" src={char.icon} ></img>
           </div>
             )
 
@@ -87,5 +82,4 @@ export default function Char() {
         
            
     )
-    
 }
