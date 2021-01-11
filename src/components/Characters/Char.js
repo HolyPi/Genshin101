@@ -13,8 +13,17 @@ export default function Char() {
     const [oneChar, setChar] = useState()
     const [charName, setCharName] = useState("albedo")
     const url = "https://api.genshin.dev/characters/all"
-    function changeChar() {
-
+    function Rar(props) {
+        if (props.rarity == 5) {
+            return <img src={five}></img>
+        } else if(props.rarity == 4) {
+            return <img src={four}></img>
+        } else {
+          return <p>PLEASE HELP!</p>
+        }
+    }
+    function changeChar(e) {
+        setCharName(e.target.innerText.toLowerCase())
     }
     useEffect( () => {
         async function fetchData()  {
@@ -26,17 +35,28 @@ export default function Char() {
         fetchData();
     }, [])
     const url2 = `https://api.genshin.dev/characters/${charName}`
+
     useEffect( () => {
         async function fetchChar()  { 
         const data2 = await axios.get(url2)
         const {name, description, rarity, portrait} = data2.data
+        const stars = (rarity) => {switch (rarity) {
+            case 5:  return <img src={five}></img>;
+            case 4: return <img src={four}></img>;
+            default: return <p>pls help</p>
+              }}
         const charJSX = (<div>
             <div className="char-container">
             <div className="char-portrait"> 
             <img className="port" src={`https://api.genshin.dev/characters/${name.toLowerCase()}/portrait`}></img>
             <p className="chname">{name}</p>
             <p className="chdesc">{description}</p>
-            <img className="rarity" src={five}></img>
+            <Rar rarity={rarity}/>
+            { 
+        }
+   
+
+            <p className="rar">{rarity}</p>
             </div>
             <div className="circle"><img src={bg}></img></div>
             </div>
@@ -53,7 +73,7 @@ export default function Char() {
         { allChar.map((char) => {
             return (
                 <div>
-                    <ul class="char-name">{char.name} </ul>
+                    <a value={char.name} onClick={(e)=>changeChar(e)}><ul class="char-name">{char.name} </ul></a>
                     <img className="char-image" src={char.icon}></img>
             
           </div>
