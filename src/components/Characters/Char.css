@@ -98,7 +98,6 @@ animation-timing-function: ease-in-out;
     font-style: italic;
     font-size: 144px;
     display: block;
-    margin-left: auto;
     margin-right: auto;
     position: absolute;
     top: 0;
@@ -114,8 +113,6 @@ animation-timing-function: ease-in-out;
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
     position: absolute;
     top: 0;
     margin-left: 64%;
@@ -236,6 +233,17 @@ animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     transition: all 400ms ease;
     opacity: 0.75;
+}
+
+
+
+.particles {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 20%;
+    z-index: 100;
+    opacity: 0.8;
+    
 }
 
 

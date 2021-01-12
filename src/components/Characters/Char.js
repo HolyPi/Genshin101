@@ -12,6 +12,7 @@ import hydro from '../../static/images/hydro.png'
 import dendro from '../../static/images/dendro.png'
 import electro from '../../static/images/electro.png'
 import pyro from '../../static/images/pyro.png'
+import particles from '../../static/images/particles.png'
 import FadeIn from 'react-fade-in';
 import { motion } from "framer-motion"
 const axios = require("axios")
@@ -30,7 +31,6 @@ export default function Char() {
           return <p>PLEASE HELP!</p>
         }
     }
-
     function Elem(props) {
         if (props.vision === "Geo") {
             return <img className="elem" src={geo}></img>
@@ -78,6 +78,7 @@ export default function Char() {
         <div>
             <div className="char-container">
             <div className="char-portrait"> 
+            <img  className="particles" src={particles}></img>
             <img className="port" src={`https://api.genshin.dev/characters/${name.toLowerCase()}/portrait`}></img></div>
             <p className="chname">{name}</p>
             <p className="chdesc">{description}</p>
@@ -86,14 +87,17 @@ export default function Char() {
             <div className="circle"><img src={bg}></img></div>
             </div>
             </div>)
-        setChar(charJSX)   
+         
+        setChar(charJSX) 
         }
         fetchChar(); 
     }, [charName])
     return (
         <div>
         <div className="side-nav">
+
         <div className="allChar">
+        
         { allChar.map((char) => {
             return (
                 <div>
