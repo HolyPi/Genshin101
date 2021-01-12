@@ -13,6 +13,7 @@ import dendro from '../../static/images/dendro.png'
 import electro from '../../static/images/electro.png'
 import pyro from '../../static/images/pyro.png'
 import FadeIn from 'react-fade-in';
+import { motion } from "framer-motion"
 const axios = require("axios")
 
 export default function Char() {
@@ -84,17 +85,10 @@ export default function Char() {
             <Elem vision={vision}/>
             <div className="circle"><img src={bg}></img></div>
             </div>
-            { 
-        }
-        
-            
             </div>)
         setChar(charJSX)   
-
         }
-       
-        fetchChar();
-      
+        fetchChar(); 
     }, [charName])
     return (
         <div>
@@ -114,6 +108,8 @@ export default function Char() {
         </div>
         </div>
         {oneChar}
-        </div>    
+        
+        </div>  
+          
     )
 }

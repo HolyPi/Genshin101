@@ -2,6 +2,7 @@
 body {
     font-family: AUTHENTICSans-60, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
 }
+
 .side-nav {
 height: 100%;
 width: 350px;
@@ -37,7 +38,6 @@ animation-timing-function: ease-in-out;
     z-index: 10; 
     position: relative;
     filter: contrast(100%);
-    transition: all 400ms ease-in-out;
     
 }
 
@@ -225,6 +225,7 @@ animation-timing-function: ease-in-out;
     image-rendering: pixelated;
     image-rendering: auto;
     image-rendering: crisp-edges;
+    cursor: pointer;
     
 }
 
