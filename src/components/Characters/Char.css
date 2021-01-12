@@ -15,6 +15,9 @@ overflow-x: hidden;
 padding-top: 20px;
 box-shadow: 0 0 0 2px #172137;
 box-shadow: 0 0 2px 0px #172137;
+animation-name: appear;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
 }
 
 
@@ -38,11 +41,11 @@ box-shadow: 0 0 2px 0px #172137;
     
 }
 
-.port {
+/* .port {
     animation-name: go-in;
     animation-duration: 4s;
     transform: translateY(50px);
-}
+} */
 
 
 
@@ -76,6 +79,13 @@ box-shadow: 0 0 2px 0px #172137;
     background-repeat:no-repeat;
 
     
+    
+}
+
+.char-container {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
     
 }
 
@@ -178,6 +188,9 @@ box-shadow: 0 0 2px 0px #172137;
     grid-gap: 15px;
     justify-items: center; 
     text-align: center;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 
 }
 
@@ -225,11 +238,17 @@ box-shadow: 0 0 2px 0px #172137;
 }
 
 
-@keyframes go-in {
+/* @keyframes go-in {
     from {
       transform: translateY(-50px);
     }
     to {
       transform: translateY(50px);
     }
-  }
+  } */
+
+  @keyframes appear {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+

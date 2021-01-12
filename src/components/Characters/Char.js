@@ -12,6 +12,7 @@ import hydro from '../../static/images/hydro.png'
 import dendro from '../../static/images/dendro.png'
 import electro from '../../static/images/electro.png'
 import pyro from '../../static/images/pyro.png'
+import FadeIn from 'react-fade-in';
 const axios = require("axios")
 
 export default function Char() {
@@ -71,24 +72,29 @@ export default function Char() {
         //     case 4: return <img src={four}></img>;
         //     default: return <p>pls help</p>
         //       }}
-        const charJSX = (<div>
+        const charJSX = (
+            
+        <div>
             <div className="char-container">
             <div className="char-portrait"> 
-            <img className="port" src={`https://api.genshin.dev/characters/${name.toLowerCase()}/portrait`}></img>
+            <img className="port" src={`https://api.genshin.dev/characters/${name.toLowerCase()}/portrait`}></img></div>
             <p className="chname">{name}</p>
             <p className="chdesc">{description}</p>
             <Rar rarity={rarity}/>
             <Elem vision={vision}/>
-            { 
-        }
-            </div>
             <div className="circle"><img src={bg}></img></div>
             </div>
+            { 
+        }
+        
+            
             </div>)
         setChar(charJSX)   
-        console.log(data2)
+
         }
+       
         fetchChar();
+      
     }, [charName])
     return (
         <div>
@@ -97,8 +103,10 @@ export default function Char() {
         { allChar.map((char) => {
             return (
                 <div>
+                    <FadeIn>
                     <a value={char.name} onClick={(e)=>changeChar(e)}><ul class="char-name">{char.name} </ul></a>
                     <img className="char-image" src={char.icon} ></img>
+                    </FadeIn>
           </div>
             )
 
@@ -106,8 +114,6 @@ export default function Char() {
         </div>
         </div>
         {oneChar}
-        </div> 
-        
-           
+        </div>    
     )
 }
