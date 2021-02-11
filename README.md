@@ -6,6 +6,8 @@
 
 # Status: **In Progress**
 
+
+
 ## Images of current website
 
 
@@ -17,12 +19,14 @@
 
 <img width="1440" alt="CharSelect2" src="https://user-images.githubusercontent.com/54602275/107697088-c87a3d00-6c80-11eb-9366-5a0229d6d78c.png">
 
-#Future Steps
+# Future Steps:
+<ol>
+  <li>Finish Elements Page</li>
+  <li>Finish Locations page</li>
+  <li>Add best weapon for each char</li>
+  <li>Add Ideal artifacts for char</li>
 
-**1. Finish Elements Page
-**2. Finish Locations page
-**3. Add best weapon for each char.
-**4. Add Ideal artifacts for chars
+
 
 
 
