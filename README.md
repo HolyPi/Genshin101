@@ -12,7 +12,7 @@
 (https://i.imgur.com/grWILAO.png)
 
 ![Image of Character Select]
-(https://i.imgur.com/t7aXABx.png)
+(https://github.com/HolyPi/Genshin101/blob/master/src/static/images/CharSelect.png)
 
 **Information displayed changes depending on character clicked**
 
