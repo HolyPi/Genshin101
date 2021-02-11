@@ -18,10 +18,11 @@
 <img width="1440" alt="CharSelect2" src="https://user-images.githubusercontent.com/54602275/107697088-c87a3d00-6c80-11eb-9366-5a0229d6d78c.png">
 
 #Future Steps
-*1. Finish Elements Page
-*2. Finish Locations page
-*3. Add best weapon for each char.
-*4. Add Ideal artifacts for chars
+
+**1. Finish Elements Page
+**2. Finish Locations page
+**3. Add best weapon for each char.
+**4. Add Ideal artifacts for chars
 
 
 
